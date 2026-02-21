@@ -202,52 +202,64 @@
         </div>
 
 <div id="about" class="tab-content" style="padding: 0; display: none; font-family: 'Montserrat', sans-serif;">
-    <div class="hero" style="
+    <style>
+        /* Responsive CSS for Mobile */
+        @media screen and (max-width: 768px) {
+            .hero-content { padding: 40px 15px !important; }
+            .about-title { font-size: 2.2rem !important; margin-bottom: 15px !important; }
+            .about-text { font-size: 1rem !important; line-height: 1.6 !important; }
+            .orange-quote { font-size: 1.2rem !important; margin-top: 25px !important; }
+            .hero-section { min-height: auto !important; padding-bottom: 50px !important; }
+        }
+    </style>
+
+    <div class="hero hero-section" style="
         background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
         url('assets/images/about_company.jpg'); 
         background-size: cover; 
         background-position: center;
         background-attachment: fixed;
-        min-height: 90vh;
+        min-height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding: 60px 0 100px 0; /* Increased bottom padding for desktop safety */
+        box-sizing: border-box;
     ">
-        <div style="width: 100%; max-width: 1100px; padding: 40px 20px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; color: white;">
+        <div class="hero-content" style="width: 100%; max-width: 1100px; padding: 0 20px; display: flex; flex-direction: column; align-items: center; text-align: center; color: white; box-sizing: border-box;">
             
-            <h1 class="about-title" style="margin: 0 0 25px 0; font-size: 3.5rem; font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 1px;">
+            <h1 class="about-title" style="margin: 0 0 30px 0; font-size: 3.5rem; font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 1px;">
                 About Us
             </h1>
 
-            <div style="font-size: 1.15rem; line-height: 1.8; font-weight: 400; text-transform: none; font-family: 'Montserrat', sans-serif; max-width: 900px;">
+            <div class="about-text" style="font-size: 1.15rem; line-height: 1.8; font-weight: 400; text-transform: none; font-family: 'Montserrat', sans-serif; max-width: 950px;">
                 We are a professionally driven Industrial Automation company delivering advanced <b>PLC, SCADA, HMI, VFD, and Servo Drive</b> integration, providing complete plant automation solutions across multiple industries. Our expertise lies in transforming conventional industrial operations into intelligent, automated, and performance-driven systems.<br><br>
                 
-                We design and implement high-precision automation solutions that improve productivity, reduce downtime, and enhance process reliability. By leveraging advanced <b>motion control with Servo systems</b> and <b>energy optimization through VFD systems</b>, we significantly optimize operational costs. From concept to commissioning and long-term support, we manage the entire automation lifecycle with precision and accountability.
+                We design and implement high-precision automation solutions that improve productivity, reduce downtime, and enhance process reliability. By leveraging advanced <b>motion control with Servo systems</b> and <b>energy optimization through VFD systems</b>, we significantly optimize operational costs.
             </div>
 
-            <div style="margin-top: 35px; font-size: 1.6rem; font-weight: 700; color: #ff9800; font-family: 'Montserrat', sans-serif; line-height: 1.4;">
+            <div class="orange-quote" style="margin-top: 45px; font-size: 1.6rem; font-weight: 700; color: #ff9800; font-family: 'Montserrat', sans-serif; line-height: 1.4; max-width: 900px;">
                 "We don’t just automate machines — we engineer efficiency, reliability, and measurable business outcomes."
             </div>
         </div>
     </div>
 
-    <div class="mv-section-container" style="font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; gap: 30px; padding: 60px 10%; background: #f9f9f9;">
-        <div class="shadow-tab-card" style="flex: 1; max-width: 450px;">
+    <div class="mv-section-container" style="font-family: 'Montserrat', sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 60px 10%; background: #ffffff;">
+        <div class="shadow-tab-card" style="flex: 1; min-width: 280px; max-width: 450px;">
             <div class="tab-icon">🎯</div>
             <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 15px;">Our Mission</h3>
             <p style="font-family: 'Montserrat', sans-serif; color: #555; line-height: 1.6;">To deliver reliable, innovative, and performance-oriented automation solutions that enhance productivity and minimize downtime.</p>
         </div>
 
-        <div class="shadow-tab-card" style="flex: 1; max-width: 450px;">
+        <div class="shadow-tab-card" style="flex: 1; min-width: 280px; max-width: 450px;">
             <div class="tab-icon">🚀</div>
             <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 15px;">Our Vision</h3>
             <p style="font-family: 'Montserrat', sans-serif; color: #555; line-height: 1.6;">To become a trusted long-term partner recognized for engineering excellence and customer-focused solutions.</p>
         </div>
     </div>
 </div>
-
 </div></div>        <div id="solutions" class="tab-content" style="padding: 40px 10%; font-family: 'Montserrat', sans-serif; display: none;">
             <h2 style="margin-bottom: 30px; font-family: 'Montserrat', sans-serif; font-weight: 700;">Our Core Solutions</h2>
             <div class="services-menu">
@@ -504,4 +516,3 @@
     </script>
 </body>
 </html>
-

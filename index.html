@@ -201,53 +201,26 @@
             </section>
         </div>
 
- <div class="hero-about" style="
-    position: relative; 
-    min-height: 80vh; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    overflow: hidden; 
-    font-family: 'Montserrat', sans-serif;
-    background-color: #0a192f; /* Fallback dark blue */
-">
-    <div class="about-slide"></div>
-    <div class="about-slide"></div>
-    <div class="about-slide"></div>
-
-    <div style="
-        position: absolute; 
-        top: 0; left: 0; width: 100%; height: 100%; 
-        background: rgba(0, 0, 0, 0.6); 
-        z-index: 1;
-    "></div>
-
-    <div style="z-index: 10; display: flex; flex-direction: column; align-items: center; text-align: center; color: white; padding: 40px 20px;">
-        
-        <h1 style="font-size: 3.5rem; font-weight: 800; margin-bottom: 25px; letter-spacing: -1px;">About Us</h1>
-        
-        <div style="max-width: 1000px;">
-            <p style="font-size: 1.1rem; line-height: 1.8; font-weight: 400; margin-bottom: 20px;">
-                We are a professionally driven Industrial Automation company delivering advanced 
-                <b style="color: #fff;">PLC, SCADA, HMI, VFD, and Servo Drive</b> integration, providing complete plant 
-                automation solutions across multiple industries. Our expertise lies in transforming conventional 
-                industrial operations into intelligent, automated, and performance-driven systems.
-            </p>
-            
-            <p style="font-size: 1.1rem; line-height: 1.8; font-weight: 400; margin-bottom: 30px;">
-                We design and implement high-precision automation solutions that improve productivity, reduce 
-                downtime, and enhance process reliability. By leveraging advanced <b style="color: #fff;">motion control 
-                with Servo systems</b> and <b style="color: #fff;">energy optimization through VFD systems</b>, we 
-                significantly optimize operational costs. From concept to commissioning and long-term support, 
-                we manage the entire automation lifecycle with precision and accountability.
-            </p>
-
-            <p style="font-size: 1.6rem; font-weight: 700; color: #ff9800; line-height: 1.4; margin-top: 20px;">
-                "We don’t just automate machines — we engineer efficiency, reliability, and measurable business outcomes."
-            </p>
-        </div>
-    </div>
-</div>
+<div id="about" class="tab-content" style="padding: 0; display: none;">
+            <div class="hero">
+                <div class="hero-slideshow">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+                <div style="z-index: 10; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <h1 class="about-title" style="margin-bottom: 20px;">About Us</h1>
+                    <div style="padding: 0 10%; max-width: 1000px; font-size: 1.0rem; line-height: 1.6; font-weight: 400; text-transform: none; color: white;">
+                        We are a professionally driven Industrial Automation company delivering advanced <b>PLC, SCADA, HMI, VFD, and Servo Drive</b> integration, providing complete plant automation solutions across multiple industries. Our expertise lies in transforming conventional industrial operations into intelligent, automated, and performance-driven systems.<br><br>
+                        
+                        We design and implement high-precision automation solutions that improve productivity, reduce downtime, and enhance process reliability. By leveraging advanced <b>motion control with Servo systems</b> and <b>energy optimization through VFD systems</b>, we significantly optimize operational costs. From concept to commissioning and long-term support, we manage the entire automation lifecycle with precision and accountability.<br><br>
+                        
+                        <span style="font-size: 1.5rem; font-weight: bold; display: block; margin-top: 10px; color: #ff9800;">
+                            "We don’t just automate machines — we engineer efficiency, reliability, and measurable business outcomes."
+                        </span>
+                    </div>
+                </div>
+            </div>
 
             <div class="mv-section-container">
                 <div class="shadow-tab-card">
@@ -266,17 +239,16 @@
             </div>
         </div>
 
-        <div id="solutions" class="tab-content" style="padding: 40px 10%; font-family: 'Montserrat', sans-serif;">
-    <h2 style="margin-bottom: 30px; font-family: 'Montserrat', sans-serif; font-weight: 700;">Our Core Solutions</h2>
-    <div class="services-menu">
-        <button class="service-btn active" style="font-family: 'Montserrat', sans-serif;" onclick="openService(event, 'machine-auto')">Machine Automation</button>
-                <button class="service-btn active" style="font-family: 'Montserrat', sans-serif;" onclick="openService(event, 'plant-auto')">Plant Automation</button>
-                <button class="service-btn active" style="font-family: 'Montserrat', sans-serif;" onclick="openService(event, 'process-auto')">Process Automation</button>
-                <button class="service-btn active" style="font-family: 'Montserrat', sans-serif;" onclick="openService(event, 'panels')">Control Panels</button>
-                <button class="service-btn active" style="font-family: 'Montserrat', sans-serif;" onclick="openService(event, 'repair')">Repair & Service</button>
-                <button class="service-btn active" style="font-family: 'Montserrat', sans-serif;" onclick="openService(event, 'amc')">Support & AMC</button>
+        <div id="solutions" class="tab-content" style="padding: 40px 10%; font-family: 'Montserrat', sans-serif; display: none;">
+            <h2 style="margin-bottom: 30px; font-family: 'Montserrat', sans-serif; font-weight: 700;">Our Core Solutions</h2>
+            <div class="services-menu">
+                <button class="service-btn active" onclick="openService(event, 'machine-auto')">Machine Automation</button>
+                <button class="service-btn" onclick="openService(event, 'plant-auto')">Plant Automation</button>
+                <button class="service-btn" onclick="openService(event, 'process-auto')">Process Automation</button>
+                <button class="service-btn" onclick="openService(event, 'panels')">Control Panels</button>
+                <button class="service-btn" onclick="openService(event, 'repair')">Repair & Service</button>
+                <button class="service-btn" onclick="openService(event, 'amc')">Support & AMC</button>
             </div>
-
             <div id="machine-auto" class="service-detail-card active">
                 <img src="assets/images/machine_auto.jpg" alt="Machine Auto">
                 <div class="service-text">

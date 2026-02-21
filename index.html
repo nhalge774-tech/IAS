@@ -203,46 +203,49 @@
 
 <div id="about" class="tab-content" style="padding: 0; display: none; font-family: 'Montserrat', sans-serif;">
     <style>
-        /* Responsive Fixes for Mobile */
+        /* Mobile-Specific Fixes */
         @media screen and (max-width: 768px) {
-            .hero-container { 
-                min-height: auto !important; /* Allows section to expand so text isn't cut off */
-                padding: 40px 15px 60px 15px !important; /* Space for About Us and Quote */
+            .hero-section { 
+                height: auto !important; 
+                min-height: 100vh !important; /* Forces it to fill the screen but allows it to grow */
+                padding-top: 120px !important; /* FIXED: Pushes "About Us" out from under the nav bar */
+                padding-bottom: 60px !important; /* FIXED: Prevents quote from touching the bottom border */
             }
             .mobile-title { 
-                font-size: 2.2rem !important; /* Smaller title so it fits on small screens */
-                margin-top: 20px !important;
+                font-size: 2.4rem !important; 
+                margin-bottom: 20px !important; 
             }
             .mobile-body-text { 
-                font-size: 1rem !important; 
-                line-height: 1.5 !important; 
+                font-size: 1.05rem !important; 
+                line-height: 1.6 !important; 
+                padding: 0 10px !important;
             }
             .mobile-quote { 
-                font-size: 1.2rem !important; 
-                margin-top: 30px !important;
-                padding-bottom: 20px !important; /* Prevents touching the bottom border */
+                font-size: 1.3rem !important; 
+                margin-top: 40px !important;
+                margin-bottom: 20px !important;
             }
         }
     </style>
 
-    <div class="hero hero-container" style="
+    <div class="hero hero-section" style="
         background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
         url('assets/images/about_company.jpg'); 
         background-size: cover; 
         background-position: center;
         background-attachment: fixed;
-        min-height: 80vh;
+        min-height: 85vh; /* Standard for desktop */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 80px 20px;
+        padding: 100px 20px;
         box-sizing: border-box;
     ">
-        <div style="width: 100%; max-width: 1100px; display: flex; flex-direction: column; align-items: center; text-align: center; color: white;">
+        <div style="width: 100%; max-width: 1100px; display: flex; flex-direction: column; align-items: center; text-align: center; color: white; box-sizing: border-box;">
             
-            <h1 class="about-title mobile-title" style="margin: 0 0 30px 0; font-size: 3.5rem; font-family: 'Montserrat', sans-serif; font-weight: 700;">
+            <h1 class="about-title mobile-title" style="margin: 0 0 30px 0; font-size: 3.5rem; font-family: 'Montserrat', sans-serif; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
                 About Us
             </h1>
 
@@ -252,23 +255,23 @@
                 We design and implement high-precision automation solutions that improve productivity and reduce downtime. By leveraging advanced <b>motion control</b> and <b>VFD systems</b>, we significantly optimize operational costs.
             </div>
 
-            <div class="mobile-quote" style="margin-top: 40px; font-size: 1.6rem; font-weight: 700; color: #ff9800; font-family: 'Montserrat', sans-serif; line-height: 1.4; max-width: 900px;">
+            <div class="mobile-quote" style="margin-top: 50px; font-size: 1.6rem; font-weight: 700; color: #ff9800; font-family: 'Montserrat', sans-serif; line-height: 1.4; max-width: 900px;">
                 "We don’t just automate machines — we engineer efficiency, reliability, and measurable business outcomes."
             </div>
         </div>
     </div>
 
-    <div class="mv-section-container" style="font-family: 'Montserrat', sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 60px 10%; background: #ffffff;">
+    <div class="mv-section-container" style="font-family: 'Montserrat', sans-serif; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 80px 10%; background: #ffffff;">
         <div class="shadow-tab-card" style="flex: 1; min-width: 280px; max-width: 450px;">
             <div class="tab-icon">🎯</div>
-            <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Our Mission</h3>
-            <p style="font-family: 'Montserrat', sans-serif; color: #555;">To deliver reliable, innovative, and performance-oriented automation solutions.</p>
+            <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 15px;">Our Mission</h3>
+            <p style="font-family: 'Montserrat', sans-serif; color: #555; line-height: 1.6;">To deliver reliable, innovative, and performance-oriented automation solutions that enhance productivity and minimize downtime.</p>
         </div>
 
         <div class="shadow-tab-card" style="flex: 1; min-width: 280px; max-width: 450px;">
             <div class="tab-icon">🚀</div>
-            <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Our Vision</h3>
-            <p style="font-family: 'Montserrat', sans-serif; color: #555;">To become a trusted long-term partner recognized for engineering excellence.</p>
+            <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 15px;">Our Vision</h3>
+            <p style="font-family: 'Montserrat', sans-serif; color: #555; line-height: 1.6;">To become a trusted long-term partner recognized for engineering excellence and customer-focused solutions.</p>
         </div>
     </div>
 </div>
